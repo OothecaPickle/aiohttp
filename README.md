@@ -3,7 +3,13 @@
 ## Purpose
 
 Version made as a workaround for the `Could not contact DNS servers` error.\
-Makes streamrip work on Android.
+~~Makes streamrip work on Android.~~\
+This will fix streamrip on Android, but it's better to instead just uninstall `aiodns` as per nathom/streamrip#894:
+```bash
+source /data/data/com.termux/files/home/.local/share/pipx/venvs/streamrip/bin/activate
+python -m pip uninstall aiodns
+deactivate
+```
 
 ## Usage example with custom DNS servers
 
